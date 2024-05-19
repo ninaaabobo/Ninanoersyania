@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di nina_style</h1>
+    </header>
+    <div class="navbar">
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#keranjang">Keranjang</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <div class="container" id="beranda">
+      <h2 class="text-center">Beranda</h2>
+      <div class="image-container">
+        <img class="image" src="home.jpg" alt="Deskripsi gambar" />
+        <div class="overlay">
+          <h2></h2>
+          <!-- Anda bisa menambahkan teks tambahan di sini -->
+        </div>
+      </div>
+
+      <!-- Konten Beranda -->
+    </div>
+    <div class="container" id="produk">
+      <h2>Produk</h2>
+      <div class="produk">
+        <div class="produk-item">
+          <h3>dress maryam , bahan crinkle air flow premium</h3>
+          <img src="produk1.jpg" alt="Deskripsi produk" style="max-width: 125px" />
+          <!-- Mengurangi lebar gambar -->
+          <p>Harga: Rp 145.000</p>
+          <button class="btn btn-succes" onclick="tambahKeKeranjang('dress maryam , bahan crinkle air flow premium', 145000)" style="background-color: #ff5722; color: #fff">Tambahkan ke Keranjang</button>
+          <button
+            class="btn btn-succes"
+            onclick="beliProduk('https://id.shp.ee/6z7JdfS')"
+            style="background-color: #28a745; color: #fff"
+          >
+            Beli
+          </button>
+        </div>
+        <div class="produk-item">
+          <h3>muza best seller abaya hitam syar'i dress muslim abaya turkey</h3>
+          <img src="produk2.jpg" alt="Deskripsi produk" style="max-width: 200px" />
+          <!-- Mengurangi lebar gambar -->
+          <p>Harga: Rp 135.000</p>
+          <button onclick="tambahKeKeranjang('muza best seller abaya hitam syari dress muslim abaya turkey', 135000)" style="background-color: #ff5722; color: #fff">Tambahkan ke Keranjang</button>
+          <button
+            onclick="beliProduk('https://id.shp.ee/9xvCrt9')"
+            style="background-color: #28a745; color: #fff"
+          >
+            Beli
+          </button>
+        </div>
+        <div class="produk-item">
+          <h3>Lcaylin | darla dress | dress muslim wanita</h3>
+          <img src="produk3.jpg" alt="Deskripsi produk" style="max-width: 200px" />
+          <!-- Mengurangi lebar gambar -->
+          <p>Harga: Rp 237.500</p>
+          <button onclick="tambahKeKeranjang('caylin | darla dress | dress muslim wanita', 237500)" style="background-color: #ff5722; color: #fff">Tambahkan ke Keranjang</button>
+          <button
+            onclick="beliProduk('https://id.shp.ee/MqG18rj')"
+            style="background-color: #28a745; color: #fff"
+          >
+            Beli"
+          </button>
+        </div>
+        <div class="produk-item">
+          <h3>Aba agen baju - rinjani dress-gamis rinjani-dress muslim bahan almeera silk- dresa wanita</h3>
+          <img src="produk 4.jpg" alt="Deskripsi produk" style="max-width: 200px" />
+          <!-- Mengurangi lebar gambar -->
+          <p>Harga: Rp 151.500</p>
+          <button onclick="tambahKeKeranjang('Aba agen baju - rinjani dress-gamis rinjani-dress muslim bahan almeera silk- dresa wanita', 151500)" style="background-color: #ff5722; color: #fff">Tambahkan ke Keranjang</button>
+          <button
+            onclick="beliProduk('https://id.shp.ee/oApqeny')"
+            style="background-color: #28a745; color: #fff"
+          >
+            Beli"
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="keranjang">
+      <h2>Keranjang Belanja</h2>
+      <div class="keranjang" id="keranjang">
+        <ul id="keranjang-item"></ul>
+        <button style="background-color: #007bff; color: #fff" onclick="beliWhatsApp()">Beli</button>
+        <button style="background-color: #dc3545; color: #fff" onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+      </div>
+    </div>
+    <div class="aboutme">
+      <h2>Tentang Kami</h2>
+      <p class="text-center">
+        selamat datang di nina style toko kami menyediakan berbagai gamis moderen gamis ini memiliki desain simpel dan elegan. Tersedia dalam berbagai warna dan ukuran, cocok untuk dipakai dalam berbagai acara, termasuk kegiatan keagamaan dan juga untuk bersantai atau hangout bersama teman-teman. Bahan katun yang digunakan membuat gamis ini mudah dibersihkan dan tidak mudah kusut. Ukuran yang tersedia mulai dari S hingga XL, sehingga Anda dapat memilih yang sesuai dengan ukuran Anda. Dengan menggunakan gamis ini, Anda dapat tampil lebih modis dan nyaman tanpa khawatir tentang kenyamanan. Beli sekarang dan rasakan kenyamanan gamis yang sesuai untuk Anda!"
+      </p>
+    </div>
+    <div class="kontak" id="kontak">
+      <h2>Kontak</h2>
+      <p>
+        Jika Anda memiliki pertanyaan, hubungi kami di:
+        <a href="https://wa.me/6281563611175">081563611175</a>
+      </p>
+      <p>
+        atau di instagram:
+        <a href="https://www.instagram.com/nrsyaniaa?igsh=aWp6cGM1cWc1a3Fm ">nrsyaniaa</a>
+      </p>
+    </div>
+    <footer>
+      <p>Hak Cipta &copy; 2024 nina_style</p>
+    </footer>
+    <script>
+      // JavaScript untuk keranjang
+      let keranjangItems = [];
+
+      function tambahKeKeranjang(nama, harga) {
+        keranjangItems.push({ nama: nama, harga: harga });
+        renderKeranjang();
+      }
+
+      function renderKeranjang() {
+        const keranjangElement = document.getElementById("keranjang-item");
+        keranjangElement.innerHTML = "";
+        let totalHarga = 0;
+        keranjangItems.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = `${item.nama} - Rp ${item.harga.toLocaleString()}`; // Ubah dolar menjadi rupiah
+          keranjangElement.appendChild(li);
+          totalHarga += item.harga;
+        });
+        const totalHargaElement = document.createElement("li");
+        totalHargaElement.textContent = `Total: Rp ${totalHarga.toLocaleString()}`; // Ubah dolar menjadi rupiah
+        keranjangElement.appendChild(totalHargaElement);
+      }
+
+      function kosongkanKeranjang() {
+        keranjangItems = [];
+        renderKeranjang();
+      }
+
+      function beliProduk(url) {
+        window.location.href = url;
+      }
+
+      function beliWhatsApp() {
+        // Ganti nomor telepon dengan nomor WhatsApp Anda
+        window.location.href = "https://wa.me/6281563611175";
+      }
+    </script>
+  </body>
+</html>
